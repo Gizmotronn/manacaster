@@ -1,2 +1,2 @@
-# manacaster
-"Earth's Last Video Game" - from Star Sailors Novel, github.com/acord-robotics
+# ELVG-RPG
+ "Earth's Last Video Game" - from the Star Sailors novella. Programmed in C# & the Unity Game Engine

@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This is an abstract class that all characters needs to inherit from
 /// </summary>
-public abstract class Character : MonoBehaviour { // abstract classes have functionality, all characters (gameObjects w/ character class) inherit these functions
+public abstract class Character : MonoBehaviour {
 
     /// <summary>
     /// The Player's movement speed
@@ -16,26 +16,46 @@ public abstract class Character : MonoBehaviour { // abstract classes have funct
     /// <summary>
     /// A reference to the character's animator
     /// </summary>
-    protected Animator animator; // Animator = inspector Unity Editor  # Protected so that it can be accessed by Scripts/player.cs
+    protected Animator myAnimator;
 
     /// <summary>
     /// The Player's direction
     /// </summary>
     protected Vector2 direction;
 
+    /// <summary>
+    /// The Character's rigidbody
+    /// </summary>
     private Rigidbody2D myRigidbody;
 
+    /// <summary>
+    /// indicates if the character is attacking or not
+    /// </summary>
+    protected bool isAttacking = false;
+
+    /// <summary>
+    /// A reference to the attack coroutine
+    /// </summary>
+    protected Coroutine attackRoutine;
+    
+    /// <summary>
+    /// Indicates if character is moving or not
+    /// </summary>
     public bool IsMoving
     {
-        get {
+        get
+        {
             return direction.x != 0 || direction.y != 0;
         }
     }
 
     protected virtual void Start()
     {
+        //Makes a reference to the rigidbody2D
         myRigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+
+        //Makes a reference to the character's animator
+        myAnimator = GetComponent<Animator>();
     }
 
     /// <summary>
@@ -43,11 +63,10 @@ public abstract class Character : MonoBehaviour { // abstract classes have funct
     /// </summary>
     protected virtual void Update ()
     {
-        // Move();
         HandleLayers();
 	}
 
-    private void FixedUpdate() // Should be used every time you manipulate rigid body
+    private void FixedUpdate()
     {
         Move();
     }
@@ -58,36 +77,62 @@ public abstract class Character : MonoBehaviour { // abstract classes have funct
     public void Move()
     {
         //Makes sure that the player moves
-        // Originally transform.Translate(direction * speed * Time.deltaTime);
-        myRigidbody.velocity = direction.normalized * speed; // # uses physics system to move gameObject
-
-        // 6:38 on inScope RPG Tutorial 2.2 https://www.youtube.com/watch?v=Y03jBu6enf8
+        myRigidbody.velocity = direction.normalized * speed;
     }
 
-    public void HandleLayers() // handles animation layers
+    /// <summary>
+    /// Makes sure that the right animation layer is playing
+    /// </summary>
+    public void HandleLayers()
     {
-        if (direction.x != 0 || direction.y != 0)
+        //Checks if we are moving or standing still, if we are moving then we need to play the move animation
+        if (IsMoving)
         {
-            AnimateMovement(direction);
+            ActivateLayer("WalkLayer");
+
+            //Sets the animation parameter so that he faces the correct direction
+            myAnimator.SetFloat("x", direction.x);
+            myAnimator.SetFloat("y", direction.y);
+
+            StopAttack();
+        }
+        else if (isAttacking)
+        {
+            ActivateLayer("AttackLayer"); // Activates this layer for object (character) when this else if is satisfied (see line 34)
         }
         else
         {
-            // Makes sure we will go back to IDLE when no key input found
-            animator.SetLayerWeight(1, 0);
+            //Makes sure that we will go back to idle when we aren't pressing any keys.
+            ActivateLayer("IdleLayer");
         }
     }
 
+    /// <summary>
+    /// Activates an animation layer based on a string
+    /// </summary>
+    public void ActivateLayer(string layerName)
+    {
+        for (int i = 0; i < myAnimator.layerCount; i++)
+        {
+            myAnimator.SetLayerWeight(i, 0);
+        }
+
+        myAnimator.SetLayerWeight(myAnimator.GetLayerIndex(layerName),1);
+    }
 
     /// <summary>
-    /// Makes the player animate in the correct direction
+    /// Stops the attack
     /// </summary>
-    /// <param name="direction"></param>
-    public void AnimateMovement(Vector2 direction)
+    public void StopAttack() // This is in the character script as the enemy (and other NPCs) will also use this snippet
     {
-        animator.SetLayerWeight(1, 1);
+        if (attackRoutine != null) // Checks if we have a reference to an co routine
+        {
+            StopCoroutine(attackRoutine);
 
-        //Sets the animation parameter so that he faces the correct direction
-        animator.SetFloat("x", direction.x);
-        animator.SetFloat("y", direction.y);
+            isAttacking = false; // Makes sure that we are not attacking
+
+            myAnimator.SetBool("attack", isAttacking); // Stops the attack animation
+        }
+
     }
 }

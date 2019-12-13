@@ -89,17 +89,45 @@ public class Player : Character
 
         if (Input.GetKeyDown(KeyCode.Space)) // only when key is pressed - not when held down
         {
-            // Attack() // # Usually used to call functions
-            StartCoroutine(Attack()); // Done in background - while the rest of the script is being run
+           attackRoutine = StartCoroutine(Attack());
         }
     }
 
-    private IEnumerator Attack() // # Attack function
+    /// <summary>
+    /// A co routine for attacking
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator Attack()
     {
-        myAnimator.SetBool("attack",true); // # See in character script, as animator can't be reached by player # when starts attack, attacking boolean is set to true
+        if (!isAttacking && !IsMoving) //Chcks if we are able to attack
+        {
+            isAttacking = true; //Indicates if we are attacking
 
-        yield return new WaitForSeconds(3) // Wait 3 seconds - cast time # Hardcoded cast time, for debugging
+            myAnimator.SetBool("attack", isAttacking); //Starts the attack animation
 
-        Debug.Log("done casting"); // After 3 seconds (see this private function) since you originally pressed the space bar (i.e. for the first time) it will print this message to the debug console
-    } // if it was void (instead of IEnumerator), it wouldn't be able to do the WaitForSeconds
+            yield return new WaitForSeconds(5); //This is a hardcoded cast time, for debugging
+
+            StopAttack(); //Ends the attack
+        } 
+
+ 
+    }
 }
+       // {
+            // Attack() // # Usually used to call functions
+            //StartCoroutine(Attack()); // Done in background - while the rest of the script is being run
+        //}
+    //}
+
+    //private IEnumerator Attack() // # Attack function
+   // {
+
+        //isAttacking = true; // See character.cs#line 34
+
+        //yield return new WaitForSeconds(3); // Wait 3 seconds - cast time # Hardcoded cast time, for debugging
+
+        //Debug.Log("done casting"); // After 3 seconds (see this private function) since you originally pressed the space bar (i.e. for the first time) it will print this message to the debug console
+
+  //  } // if it was void (instead of IEnumerator), it wouldn't be able to do the WaitForSeconds
+
+//}

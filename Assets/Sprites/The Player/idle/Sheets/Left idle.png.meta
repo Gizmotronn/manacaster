@@ -1,72 +1,31 @@
 fileFormatVersion: 2
 guid: 663d1998ecf8a1546ae93c78461e8c75
+timeCreated: 1504805340
+licenseType: Pro
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: Left idle_0
-  - first:
-      213: 21300002
-    second: Left idle_1
-  - first:
-      213: 21300004
-    second: Left idle_2
-  - first:
-      213: 21300006
-    second: Left idle_3
-  - first:
-      213: 21300008
-    second: Left idle_4
-  - first:
-      213: 21300010
-    second: Left idle_5
-  - first:
-      213: 21300012
-    second: Left idle_6
-  - first:
-      213: 21300014
-    second: Left idle_7
-  - first:
-      213: 21300016
-    second: Left idle_8
-  - first:
-      213: 21300018
-    second: Left idle_9
-  - first:
-      213: 21300020
-    second: Left idle_10
-  - first:
-      213: 21300022
-    second: Left idle_11
-  - first:
-      213: 21300024
-    second: Left idle_12
-  - first:
-      213: 21300026
-    second: Left idle_13
-  - first:
-      213: 21300028
-    second: Left idle_14
-  - first:
-      213: 21300030
-    second: Left idle_15
-  - first:
-      213: 21300032
-    second: Left idle_16
-  - first:
-      213: 21300034
-    second: Left idle_17
-  - first:
-      213: 21300036
-    second: Left idle_18
-  - first:
-      213: 21300038
-    second: Left idle_19
-  - first:
-      213: 21300040
-    second: Left idle_20
-  externalObjects: {}
-  serializedVersion: 10
+  fileIDToRecycleName:
+    21300000: Left idle_0
+    21300002: Left idle_1
+    21300004: Left idle_2
+    21300006: Left idle_3
+    21300008: Left idle_4
+    21300010: Left idle_5
+    21300012: Left idle_6
+    21300014: Left idle_7
+    21300016: Left idle_8
+    21300018: Left idle_9
+    21300020: Left idle_10
+    21300022: Left idle_11
+    21300024: Left idle_12
+    21300026: Left idle_13
+    21300028: Left idle_14
+    21300030: Left idle_15
+    21300032: Left idle_16
+    21300034: Left idle_17
+    21300036: Left idle_18
+    21300038: Left idle_19
+    21300040: Left idle_20
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,8 +43,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -96,7 +53,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,41 +65,33 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 300
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -160,13 +109,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 3c935f9f6ebb4804eaa51fd92fabd72f
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_1
       rect:
@@ -181,13 +123,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: fa495bc44f7c01c4e8e650b8ecbca5db
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_2
       rect:
@@ -202,13 +137,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 344998d410c7b3146bd83cbff25f23f9
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_3
       rect:
@@ -223,13 +151,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: c6add4aae45d77b46ae249ce429207c4
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_4
       rect:
@@ -244,13 +165,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 6e86f1d71bc3b864785891d93cf63454
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_5
       rect:
@@ -265,13 +179,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 0a0649f8b54885549ad45900ede21b76
-      internalID: 21300010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_6
       rect:
@@ -286,13 +193,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: a24f19ded7a3ec7449ad3d2a63a7c788
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_7
       rect:
@@ -307,13 +207,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: d9fbed1471151df41bac5b7834e7d0dd
-      internalID: 21300014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_8
       rect:
@@ -328,13 +221,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 5770ad8c78fd40145ba7634ed6ac616d
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_9
       rect:
@@ -349,13 +235,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 0d040fc8eb457fe48b97a05cf0e91e5f
-      internalID: 21300018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_10
       rect:
@@ -370,13 +249,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 462b8b12fc1b74242af721f1f2a39032
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_11
       rect:
@@ -391,13 +263,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 1b5430c2b2ffdca409acc08aa62e0aca
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_12
       rect:
@@ -412,13 +277,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 1cdcaac7ae16a10408d77b42ed8082f9
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_13
       rect:
@@ -433,13 +291,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 07a3e9b3082b64a4fa36fe2231fccf23
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_14
       rect:
@@ -454,13 +305,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ba1e374b35bf50343bf0604c60fa0ee5
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_15
       rect:
@@ -475,13 +319,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 2bce69a7ae554514a8b1cc14bc151d70
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_16
       rect:
@@ -496,13 +333,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: af8edf24c3e433448a81deec9a97f15e
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_17
       rect:
@@ -517,13 +347,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 78086f118b29c404bb5447241dcbb3da
-      internalID: 21300034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_18
       rect:
@@ -538,13 +361,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: e37a1f6c597e0c349843d448f65ce9da
-      internalID: 21300036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_19
       rect:
@@ -559,13 +375,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ceeb98f0c042f8b47b0dd140c9b6dff7
-      internalID: 21300038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Left idle_20
       rect:
@@ -580,26 +389,9 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: b8d05ea0e6467bc43982a7589a6ebce2
-      internalID: 21300040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 
-    internalID: 0
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
-    secondaryTextures: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

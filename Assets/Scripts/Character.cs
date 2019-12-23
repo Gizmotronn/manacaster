@@ -98,7 +98,7 @@ public abstract class Character : MonoBehaviour {
         }
         else if (isAttacking)
         {
-            ActivateLayer("AttackLayer"); // Activates this layer for object (character) when this else if is satisfied (see line 34)
+            ActivateLayer("AttackLayer");
         }
         else
         {
@@ -123,15 +123,15 @@ public abstract class Character : MonoBehaviour {
     /// <summary>
     /// Stops the attack
     /// </summary>
-    public void StopAttack() // This is in the character script as the enemy (and other NPCs) will also use this snippet
+    public void StopAttack()
     {
-        if (attackRoutine != null) // Checks if we have a reference to an co routine
+        if (attackRoutine != null) //Checks if we have a reference to an co routine
         {
             StopCoroutine(attackRoutine);
 
-            isAttacking = false; // Makes sure that we are not attacking
+            isAttacking = false; //Makes sure that we are not attacking
 
-            myAnimator.SetBool("attack", isAttacking); // Stops the attack animation
+            myAnimator.SetBool("attack", isAttacking); //Stops the attack animation
         }
 
     }

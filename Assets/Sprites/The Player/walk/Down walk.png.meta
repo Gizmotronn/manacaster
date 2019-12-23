@@ -1,60 +1,27 @@
 fileFormatVersion: 2
 guid: ca572797dab9c7142a9010b5fb8c9f89
+timeCreated: 1504861146
+licenseType: Pro
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7965276113541966534
-    second: Down walk_0
-  - first:
-      213: -5411033413701655515
-    second: Down walk_1
-  - first:
-      213: 3188178797240396433
-    second: Down walk_2
-  - first:
-      213: -7196824812489705044
-    second: Down walk_3
-  - first:
-      213: 6383999501597439753
-    second: Down walk_4
-  - first:
-      213: 7461684112372776348
-    second: Down walk_5
-  - first:
-      213: 1053262100540631737
-    second: Down walk_6
-  - first:
-      213: -8566952904084192568
-    second: Down walk_7
-  - first:
-      213: -6765898806586475146
-    second: Down walk_8
-  - first:
-      213: -8265457208725659165
-    second: Down walk_9
-  - first:
-      213: 2248029812737082489
-    second: Down walk_10
-  - first:
-      213: 940914327520369498
-    second: Down walk_11
-  - first:
-      213: -3311069097785243485
-    second: Down walk_12
-  - first:
-      213: 7568003852014917715
-    second: Down walk_13
-  - first:
-      213: -1955074098553164914
-    second: Down walk_14
-  - first:
-      213: -5549189930355471764
-    second: Down walk_15
-  - first:
-      213: 5845303201665704576
-    second: Down walk_16
-  externalObjects: {}
-  serializedVersion: 10
+  fileIDToRecycleName:
+    21300000: Down walk_0
+    21300002: Down walk_1
+    21300004: Down walk_2
+    21300006: Down walk_3
+    21300008: Down walk_4
+    21300010: Down walk_5
+    21300012: Down walk_6
+    21300014: Down walk_7
+    21300016: Down walk_8
+    21300018: Down walk_9
+    21300020: Down walk_10
+    21300022: Down walk_11
+    21300024: Down walk_12
+    21300026: Down walk_13
+    21300028: Down walk_14
+    21300030: Down walk_15
+    21300032: Down walk_16
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,8 +39,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -84,7 +49,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -96,74 +61,33 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 300
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -173,84 +97,56 @@ TextureImporter:
         serializedVersion: 2
         x: 7
         y: 3607
-        width: 430
+        width: 433
         height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ce6f5983a9c298445a343eb0fc2ba102
-      internalID: -7965276113541966534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_1
       rect:
         serializedVersion: 2
-        x: 443
+        x: 440
         y: 3607
-        width: 428
+        width: 433
         height: 466
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: d0f2a347e2dead242afed14b0c56e986
-      internalID: -5411033413701655515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_2
       rect:
         serializedVersion: 2
         x: 879
-        y: 3609
+        y: 3608
         width: 428
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 472
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 3ba4aded006152048a34335523d8b6e6
-      internalID: 3188178797240396433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_3
       rect:
         serializedVersion: 2
-        x: 1313
+        x: 1312
         y: 3609
-        width: 428
+        width: 432
         height: 474
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 395da2b57dec1f44c85ba345cfd2a48e
-      internalID: -7196824812489705044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_4
       rect:
@@ -259,166 +155,110 @@ TextureImporter:
         y: 3123
         width: 428
         height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: dece681b1fcca6f4ab5c1b5c2909d515
-      internalID: 6383999501597439753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_5
       rect:
         serializedVersion: 2
-        x: 445
+        x: 440
         y: 3123
-        width: 426
-        height: 474
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 433
+        height: 477
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 4840b242573c5b14293fe21ee1145f48
-      internalID: 7461684112372776348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_6
       rect:
         serializedVersion: 2
         x: 879
-        y: 3123
+        y: 3120
         width: 428
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 473
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 7501765bdc137de478de5b4a44c76f6a
-      internalID: 1053262100540631737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_7
       rect:
         serializedVersion: 2
-        x: 1313
-        y: 3123
-        width: 428
-        height: 464
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1312
+        y: 3120
+        width: 431
+        height: 467
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ae0894c51a844384b8b378ce0a133541
-      internalID: -8566952904084192568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_8
       rect:
         serializedVersion: 2
         x: 7
-        y: 2635
-        width: 430
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 2632
+        width: 433
+        height: 465
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: dac9d33f3fd44bb44be3babdcb20d131
-      internalID: -6765898806586475146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_9
       rect:
         serializedVersion: 2
-        x: 443
-        y: 2637
-        width: 428
-        height: 464
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 440
+        y: 2635
+        width: 433
+        height: 466
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: f20c481f822307a48955d44bb11471e0
-      internalID: -8265457208725659165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_10
       rect:
         serializedVersion: 2
         x: 879
-        y: 2637
+        y: 2635
         width: 428
-        height: 470
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 472
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 9fd956aff3b110c42bc480e5c672f618
-      internalID: 2248029812737082489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_11
       rect:
         serializedVersion: 2
         x: 1313
         y: 2637
-        width: 428
+        width: 432
         height: 474
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: a28b3cd00b1c1ba499f742cd9d58b5b4
-      internalID: 940914327520369498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_12
       rect:
@@ -426,41 +266,27 @@ TextureImporter:
         x: 9
         y: 2151
         width: 428
-        height: 478
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 481
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: e2cc7a90b9c27bb4f8de9e45dd86d90a
-      internalID: -3311069097785243485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_13
       rect:
         serializedVersion: 2
-        x: 445
+        x: 440
         y: 2151
-        width: 426
+        width: 433
         height: 474
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 9e19d43241309fe4d879daeb50af3e22
-      internalID: 7568003852014917715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_14
       rect:
@@ -468,75 +294,44 @@ TextureImporter:
         x: 879
         y: 2151
         width: 428
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 470
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 74dc7774c6f12ee43bae428f1ca60000
-      internalID: -1955074098553164914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_15
       rect:
         serializedVersion: 2
-        x: 1313
+        x: 1312
         y: 2149
-        width: 428
-        height: 466
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 433
+        height: 468
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: e7875a1541bba9c47b24eb03eb4642db
-      internalID: -5549189930355471764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down walk_16
       rect:
         serializedVersion: 2
         x: 7
         y: 1663
-        width: 430
+        width: 433
         height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.519, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 1f583e06c0ecfb44481efd1979673f90
-      internalID: 5845303201665704576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 963cd71e06b240847a16e177ed7d304a
-    internalID: 0
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
-    secondaryTextures: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

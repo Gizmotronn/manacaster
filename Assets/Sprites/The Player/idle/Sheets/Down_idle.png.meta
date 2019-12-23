@@ -1,72 +1,31 @@
 fileFormatVersion: 2
 guid: 34f3c12140a919048ba0a381e459d305
+timeCreated: 1504628614
+licenseType: Pro
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: Down_idle_0
-  - first:
-      213: 21300002
-    second: Down_idle_1
-  - first:
-      213: 21300004
-    second: Down_idle_2
-  - first:
-      213: 21300006
-    second: Down_idle_3
-  - first:
-      213: 21300008
-    second: Down_idle_4
-  - first:
-      213: 21300010
-    second: Down_idle_5
-  - first:
-      213: 21300012
-    second: Down_idle_6
-  - first:
-      213: 21300014
-    second: Down_idle_7
-  - first:
-      213: 21300016
-    second: Down_idle_8
-  - first:
-      213: 21300018
-    second: Down_idle_9
-  - first:
-      213: 21300020
-    second: Down_idle_10
-  - first:
-      213: 21300022
-    second: Down_idle_11
-  - first:
-      213: 21300024
-    second: Down_idle_12
-  - first:
-      213: 21300026
-    second: Down_idle_13
-  - first:
-      213: 21300028
-    second: Down_idle_14
-  - first:
-      213: 21300030
-    second: Down_idle_15
-  - first:
-      213: 21300032
-    second: Down_idle_16
-  - first:
-      213: 21300034
-    second: Down_idle_17
-  - first:
-      213: 21300036
-    second: Down_idle_18
-  - first:
-      213: 21300038
-    second: Down_idle_19
-  - first:
-      213: 21300040
-    second: Down_idle_20
-  externalObjects: {}
-  serializedVersion: 10
+  fileIDToRecycleName:
+    21300000: Down_idle_0
+    21300002: Down_idle_1
+    21300004: Down_idle_2
+    21300006: Down_idle_3
+    21300008: Down_idle_4
+    21300010: Down_idle_5
+    21300012: Down_idle_6
+    21300014: Down_idle_7
+    21300016: Down_idle_8
+    21300018: Down_idle_9
+    21300020: Down_idle_10
+    21300022: Down_idle_11
+    21300024: Down_idle_12
+    21300026: Down_idle_13
+    21300028: Down_idle_14
+    21300030: Down_idle_15
+    21300032: Down_idle_16
+    21300034: Down_idle_17
+    21300036: Down_idle_18
+    21300038: Down_idle_19
+    21300040: Down_idle_20
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,8 +43,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -96,7 +53,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,41 +65,33 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 300
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -160,13 +109,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 3de19a6a87e4bb148a513e2ae26a970e
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_1
       rect:
@@ -181,13 +123,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 37b0e14f2020fd3419b8446bb7a11777
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_2
       rect:
@@ -202,13 +137,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 2154c0c9f5a79554797e68da807fd477
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_3
       rect:
@@ -223,13 +151,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: def9949301dd3ad4fa04c4e36a799e63
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_4
       rect:
@@ -244,13 +165,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: cf820c93077df91499a3e8c915f8c158
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_5
       rect:
@@ -265,13 +179,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: b6d47cae3c8829d419ef4757a39cb8e4
-      internalID: 21300010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_6
       rect:
@@ -286,13 +193,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 7bc295bf2eb86174e9bef649bd82a520
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_7
       rect:
@@ -307,13 +207,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: afb99dbdebbbe554fbdbd07713f7f010
-      internalID: 21300014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_8
       rect:
@@ -328,13 +221,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ceafcbf30e73fee4f9f31cfd4bfee0b7
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_9
       rect:
@@ -349,13 +235,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: f8744e59fcedf884688f5fa08f71c62a
-      internalID: 21300018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_10
       rect:
@@ -370,13 +249,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: c5dc5e54600d6ca44ab4fd59b3c97e76
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_11
       rect:
@@ -391,13 +263,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 444664443443f7a46b19f58b7808b950
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_12
       rect:
@@ -412,13 +277,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 5d6f478cf8c55f143bde16a2dfe11d6e
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_13
       rect:
@@ -433,13 +291,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 8c252a0d66c522c4bbb78d3876b6ccd1
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_14
       rect:
@@ -454,13 +305,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: c5de961e59ecc5349a52acc1f0cdd8e1
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_15
       rect:
@@ -475,13 +319,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 9b1fd7650c6fa974db47ab52a79d5c04
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_16
       rect:
@@ -496,13 +333,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: f2c651b397915c640b50d1f850f024e0
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_17
       rect:
@@ -517,13 +347,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 5da247c76f8ce4b44a29067cca1ac9a2
-      internalID: 21300034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_18
       rect:
@@ -538,13 +361,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 1fcd0fb0682e89c48b1de8da0a5efdaa
-      internalID: 21300036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_19
       rect:
@@ -559,13 +375,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 55f3d808fc573474d8354a672ecc6cff
-      internalID: 21300038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Down_idle_20
       rect:
@@ -580,26 +389,9 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 343b7c661d86f1143ae7e3b5d14dd7dd
-      internalID: 21300040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 
-    internalID: 0
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
-    secondaryTextures: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

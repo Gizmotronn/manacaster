@@ -29,8 +29,22 @@ public class Player : Character
     /// </summary>
     private float initMana = 50;
 
+    /// <summary>
+    /// Contain's all prefabs for the spells
+    /// </summary>
     [SerializeField]
     private GameObject[] spellPrefab;
+
+    /// <summary>
+    /// Positions for creating our spells
+    /// </summary>
+    [SerializeField]
+    private Transform[] exitPoints;
+
+    /// <summary>
+    /// Keeps track of which exit point to use 2 is defualt down
+    /// </summary>
+    private int exitIndex = 2;
 
     protected override void Start()
     {
@@ -73,18 +87,22 @@ public class Player : Character
 
         if (Input.GetKey(KeyCode.W)) //Moves up
         {
+            exitIndex = 0;
             direction += Vector2.up;
         }
         if (Input.GetKey(KeyCode.A)) //Moves left
         {
+            exitIndex = 3;
             direction += Vector2.left; //Moves down
         }
         if (Input.GetKey(KeyCode.S))
         {
+            exitIndex = 2;
             direction += Vector2.down;
         }
         if (Input.GetKey(KeyCode.D)) //Moves right
         {
+            exitIndex = 1;
             direction += Vector2.right;
         }
         if (Input.GetKeyDown(KeyCode.Space)) //Makes the player attack
@@ -114,8 +132,12 @@ public class Player : Character
         StopAttack(); //Ends the attack
     }
 
+    /// <summary>
+    /// Casts a spell
+    /// </summary>
     public void CastSpell()
     {
-        Instantiate(spellPrefab[0], transform.position, Quaternion.identity);
+        Instantiate(spellPrefab[0], exitPoints[exitIndex].position, Quaternion.identity);
     }
+
 }

@@ -2,17 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+/// <summary>
+/// This is an abstract class that all characters needs to inherit from
+/// </summary>
+public abstract class Character : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// The Player's movement speed
+    /// </summary>
+    [SerializeField]
+    private float speed;
+
+    /// <summary>
+    /// The Player's direction
+    /// </summary>
+    protected Vector2 direction;
+
+    // Use this for initialization
+    void Start () {
+		
+	}
+	
+	/// <summary>
+    /// Update is marked as virtual, so that we can override it in the subclasses
+    /// </summary>
+	protected virtual void Update ()
     {
-        
+        Move();
+	}
+
+    /// <summary>
+    /// Moves the player
+    /// </summary>
+    public void Move()
+    {
+        //Makes sure that the player moves
+        transform.Translate(direction * speed * Time.deltaTime);
     }
 }

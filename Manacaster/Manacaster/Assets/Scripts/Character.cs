@@ -41,8 +41,19 @@ public abstract class Character : MonoBehaviour {
         //Makes sure that the player moves
         transform.Translate(direction * speed * Time.deltaTime);
 
-        //Animate's the Player's movement
-        AnimateMovement(direction);
+        if (direction.x != 0 || direction.y != 0) // If the x-direction or y-direction of the game object (e.g player) is not 0, then go to next line and follow instructions ## If it is not 0, the object is moving in some way!
+        {
+            //Animate's the Player's movement
+            AnimateMovement(direction);
+        }
+        else // if the object is NOT moving ## object/game-object
+        {
+            {
+                animator.SetLayerWeight(1, 0); // Set back to the idle layer
+            }
+        }
+
+
     }
 
     /// <summary>
@@ -51,6 +62,8 @@ public abstract class Character : MonoBehaviour {
     /// <param name="direction"></param>
     public void AnimateMovement(Vector2 direction)
     {
+        animator.SetLayerWeight(1,1); // # inscope.me 1.3 ## Sets the second animator layer (walk_layer - index values python) to the active layer when the key input to walk is found
+        
         //Sets the animation parameter so that he faces the correct direction
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);

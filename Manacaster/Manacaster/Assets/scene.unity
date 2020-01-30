@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 200527961}
   - component: {fileID: 200527963}
   - component: {fileID: 200527962}
+  - component: {fileID: 200527964}
   m_Layer: 5
   m_Name: Mana
   m_TagString: Untagged
@@ -269,6 +270,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200527960}
   m_CullTransparentMesh: 0
+--- !u!114 &200527964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200527960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &401913828
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +793,7 @@ GameObject:
   - component: {fileID: 1940071079}
   - component: {fileID: 1940071081}
   - component: {fileID: 1940071080}
+  - component: {fileID: 1940071082}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -842,6 +856,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940071078}
   m_CullTransparentMesh: 0
+--- !u!114 &1940071082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940071078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2117496219
 GameObject:
   m_ObjectHideFlags: 0

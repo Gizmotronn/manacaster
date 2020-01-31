@@ -16,6 +16,8 @@ public class Player : Character
         //Executes the GetInput function
         GetInput();
 
+        health.MyCurrentValue = 100; // This can be used to set the fill values in stat.cs
+
         base.Update();
 	}
 

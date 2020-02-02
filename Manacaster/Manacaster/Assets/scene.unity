@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!114 &200527965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!1 &401913828
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,8 +620,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1502736652}
   - component: {fileID: 1502736651}
-  - component: {fileID: 1502736650}
   - component: {fileID: 1502736653}
+  - component: {fileID: 1502736650}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -882,6 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!114 &1940071083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,6 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!1 &2117496219
 GameObject:
   m_ObjectHideFlags: 0

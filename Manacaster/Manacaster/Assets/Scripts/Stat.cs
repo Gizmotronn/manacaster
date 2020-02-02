@@ -51,11 +51,11 @@ public class Stat : MonoBehaviour
             }
             else if (value < 0) //Makes sure that we don't get health below 0
             {
-                currentValue = 0;
+                currentValue = 0; // No matter what the health is set to (possibly in player.cs), if it is below 0 then it is reset to a value of 0
             }
             else //Makes sure that we set the current value withing the bounds of 0 to max health
             {
-                currentValue = value;
+                currentValue = value; // if health is between 0-100 (inside)
             }
 
             //Calculates the currentFill, so that we can lerp
@@ -78,6 +78,8 @@ public class Stat : MonoBehaviour
     {
         //Makes sure that we update the bar
         HandleBar();
+
+        Debug.Log(MyCurrentValue); // Shows the Unity debug log the current values (i.e. health)
     }
 
     /// <summary>
@@ -85,9 +87,10 @@ public class Stat : MonoBehaviour
     /// </summary>
     /// <param name="currentValue">The current value of the bar</param>
     /// <param name="maxValue">The max value of the bar</param>
-    public void Initialize(float currentValue, float maxValue)
+
+    public void Initialize(float currentValue, float maxValue) // Use this to set values at the beginning
     {
-        MyMaxValue = maxValue;
+        MyMaxValue = maxValue; // sets the bars to the correct value upon initialisation/beginning of gameplay
         MyCurrentValue = currentValue;
     }
 

@@ -31,7 +31,6 @@ public class Player : Character
 
     protected override void Start()
     {
-
         health.Initialize(initHealth, initHealth);
         mana.Initialize(initMana, initMana);
 

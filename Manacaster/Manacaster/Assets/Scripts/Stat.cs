@@ -11,6 +11,9 @@ public class Stat : MonoBehaviour
     /// </summary>
     private Image content; // Referencing to game object - Tutorial inscope.me RPG 2.0  ## See in void Start()
 
+    [SerializeField]
+    private Text statValue;
+
     /// <summary>
     /// Hold the current fill value, we use this, so that we know if we need to lerp a value
     /// </summary>
@@ -60,6 +63,8 @@ public class Stat : MonoBehaviour
 
             //Calculates the currentFill, so that we can lerp
             currentFill = currentValue / MyMaxValue;
+
+            statValue.text = currentValue + "/" + MyMaxValue; // Like python, sets values for stat bars in game (health, mana, etc)
         }
     }
 

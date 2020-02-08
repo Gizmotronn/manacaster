@@ -13,7 +13,7 @@ public abstract class Character : MonoBehaviour {
     [SerializeField]
     private float speed;
 
-    private Animator animator;
+    private Animator animator; // Allows the character.cs script to access the player (gameObject) animator module
 
     /// <summary>
     /// The Player's direction
@@ -22,7 +22,7 @@ public abstract class Character : MonoBehaviour {
 
     // Use this for initialization
     protected virtual void Start () {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>(); // For gameObject "player"
 	}
 	
 	/// <summary>
@@ -65,7 +65,7 @@ public abstract class Character : MonoBehaviour {
         animator.SetLayerWeight(1,1); // # inscope.me 1.3 ## Sets the second animator layer (walk_layer - index values python) to the active layer when the key input to walk is found
         
         //Sets the animation parameter so that he faces the correct direction
-        animator.SetFloat("x", direction.x);
-        animator.SetFloat("y", direction.y);
+        animator.SetFloat("x", direction.x); // sets the value of the parameter "x" in the "animator" to the horizontal direction of the player gameObject
+        animator.SetFloat("y", direction.y); // Same as above, however sets "y" as the VERTICAL direction
     }
 }

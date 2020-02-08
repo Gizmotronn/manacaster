@@ -207,7 +207,6 @@ GameObject:
   - component: {fileID: 200527961}
   - component: {fileID: 200527963}
   - component: {fileID: 200527962}
-  - component: {fileID: 200527964}
   - component: {fileID: 200527965}
   m_Layer: 5
   m_Name: Mana
@@ -272,20 +271,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200527960}
   m_CullTransparentMesh: 0
---- !u!114 &200527964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200527960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statValue: {fileID: 0}
-  lerpSpeed: 0
 --- !u!114 &200527965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statValue: {fileID: 0}
+  statValue: {fileID: 651138348}
   lerpSpeed: 0
 --- !u!1 &401913828
 GameObject:
@@ -411,7 +396,7 @@ GameObject:
   - component: {fileID: 651138349}
   - component: {fileID: 651138348}
   m_Layer: 5
-  m_Name: Mana Text
+  m_Name: ValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,7 +473,7 @@ GameObject:
   - component: {fileID: 805902285}
   - component: {fileID: 805902284}
   m_Layer: 5
-  m_Name: Health Text
+  m_Name: ValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -777,8 +762,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1502736652}
   - component: {fileID: 1502736651}
-  - component: {fileID: 1502736653}
   - component: {fileID: 1502736650}
+  - component: {fileID: 1502736653}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -799,8 +784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  health: {fileID: 0}
-  mana: {fileID: 0}
+  health: {fileID: 1940071083}
+  mana: {fileID: 200527965}
 --- !u!212 &1502736651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -874,7 +859,7 @@ Animator:
   m_GameObject: {fileID: 1502736649}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63ed8f219d7f42d4b87ec29527b68970, type: 2}
+  m_Controller: {fileID: 9100000, guid: 81bc54cb680b152499b25e2f49832bb0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

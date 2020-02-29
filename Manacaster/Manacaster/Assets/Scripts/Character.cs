@@ -60,8 +60,10 @@ public abstract class Character : MonoBehaviour {
     /// Makes the player animate in the correct direction
     /// </summary>
     /// <param name="direction"></param>
-    public void AnimateMovement(Vector2 direction)
+    public void AnimateMovement(Vector2 direction) // whenever player is moving: 
     {
+	// animator.SetLayerWeight(1, 1)   //# The layer for walking is the second layer - index values - so is number 1 // This sets the layer weight of the animator layers for the player game object // The layer that is set to "1/?0?" is the active one // https://www.youtube.com/watch?v=aOqQuD_1ylA&list=PLX-uZVK_0K_6JEecbu3Y-nVnANJznCzix&index=5 @ 7.42
+	    
         animator.SetLayerWeight(1,1); // # inscope.me 1.3 ## Sets the second animator layer (walk_layer - index values python) to the active layer when the key input to walk is found
         
         //Sets the animation parameter so that he faces the correct direction

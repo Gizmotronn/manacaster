@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public class Player : Character
 {
+    [SerializeField]
+    private Stat health;
 
 	/// <summary>
     /// We are overriding the characters update function, so that we can execute our own functions
@@ -15,7 +17,7 @@ public class Player : Character
     {
         //Executes the GetInput function
         GetInput();
-
+        
         base.Update();
 	}
 

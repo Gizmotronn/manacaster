@@ -10,6 +10,19 @@ public class Player : Character
     [SerializeField]
     private Stat health;
 
+    //[SerializeField]
+    //private float healthValue;
+
+   // [SerializeField]
+    private float initHealth = 100;
+
+    protected override void Start()
+    {
+        health.Initialize(initHealth, initHealth); // Was 100, 100 // healthValue, maxHealth);
+
+        base.Start();
+    }
+
 	/// <summary>
     /// We are overriding the characters update function, so that we can execute our own functions
     /// </summary>

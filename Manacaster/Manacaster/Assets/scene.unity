@@ -637,6 +637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   health: {fileID: 164995935}
+  healthValue: 0
+  maxHealth: 100
 --- !u!212 &1502736651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -756,7 +758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 31.7, y: -31.1}
+  m_AnchoredPosition: {x: 31.699951, y: -31.100006}
   m_SizeDelta: {x: 53.399994, y: 53.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623616519

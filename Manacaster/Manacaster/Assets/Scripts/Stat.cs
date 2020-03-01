@@ -25,13 +25,27 @@ public class Stat : MonoBehaviour
                 currentValue = MyMaxValue;
             }
 
-            currentValue = value; // Value (RHS) set in player.cs
+            else if (value < 0)
+            {
+                currentValue = 0;
+            }
+            else
+            {
+                currentValue = value;
+            }
+
+            // currentValue = value; // Value (RHS) set in player.cs // See https://acord-robotics.github.io/stellarios/ar-11-healthmanabar2dot0/
+            
+            currentFill - currentValue / MyMaxValue
+        
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        MyMaxValue = 100; // Prevents the health/mana going above 100
+        
         content = GetComponent<Image>(); // The variable "content" is connected/references the "health", "mana" game objects in scene: "scene"
     }
 
@@ -39,5 +53,14 @@ public class Stat : MonoBehaviour
     void Update()
     {
         Debug.Log(MyCurrentValue);
+
+        content.fillAmount = 
+    }
+
+    // Initialize for stat values
+    public void Initialize(float currentValue, float maxValue)
+    {
+        MyMaxValue = maxValue;
+        MyMaxValue = currentValue;
     }
 }

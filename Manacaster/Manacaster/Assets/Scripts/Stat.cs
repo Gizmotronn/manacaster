@@ -7,6 +7,9 @@ public class Stat : MonoBehaviour
 {
     private Image content;
 
+    [SerializeField]
+    private float lerpSpeed;
+
     private float currentFill;
 
     public float MyMaxValue { get; set; } // Max value for health, game objects
@@ -35,8 +38,7 @@ public class Stat : MonoBehaviour
             }
 
             // currentValue = value; // Value (RHS) set in player.cs // See https://acord-robotics.github.io/stellarios/ar-11-healthmanabar2dot0/
-            
-            currentFill - currentValue / MyMaxValue
+            currentFill = currentValue / MyMaxValue;
         
         }
     }
@@ -52,9 +54,14 @@ public class Stat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentFill != content.fillAmount){
+            content.fillAmount = Mathf.Lerp(content.fillAmount,currentFill, Time.deltaTime * lerpSpeed); // Moves equally on every single device // Smooth transitions
+        }
+        
+
         Debug.Log(MyCurrentValue);
 
-        content.fillAmount = 
+        content.fillAmount = currentFill;
     }
 
     // Initialize for stat values

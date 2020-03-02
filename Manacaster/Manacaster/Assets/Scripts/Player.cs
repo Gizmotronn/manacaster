@@ -10,15 +10,21 @@ public class Player : Character
     [SerializeField]
     private Stat health;
 
+    [SerializeField]
+    private Stat mana;
+
     //[SerializeField]
     //private float healthValue;
 
    // [SerializeField]
     private float initHealth = 100;
 
+    private float initMana = 50;
+
     protected override void Start()
     {
         health.Initialize(initHealth, initHealth); // Was 100, 100 // healthValue, maxHealth);
+        mana.Initialize(initMana, initMana);
 
         base.Start();
     }
@@ -40,6 +46,19 @@ public class Player : Character
     private void GetInput()
     {
         direction = Vector2.zero;
+
+        // Debugging - inscope.me RPG 2.0
+        if (Input.GetKeyDown(KeyCode.I));
+        {
+            health.MyCurrentValue -= 10; // Lose 10 health - player game object
+            mana.MyCurrentValue -= 10;
+        }
+        if (Input.GetKeyDown(KeyCode.O));
+        {
+            health.MyCurrentValue += 10; // Add 10 health (see above ^^) - healing debug function
+            mana.MyCurrentValue += 10; // ^^
+        }
+
 
         if (Input.GetKey(KeyCode.W)) //Moves up
         {

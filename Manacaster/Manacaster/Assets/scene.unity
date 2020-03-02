@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0.5
 --- !u!1 &202713277
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdefc7f5cd19024ba536d4213efae2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0.5
 --- !u!1 &1502736649
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,8 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   health: {fileID: 164995935}
-  healthValue: 0
-  maxHealth: 100
+  mana: {fileID: 1384559939}
 --- !u!212 &1502736651
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -20,8 +20,11 @@ public abstract class Character : MonoBehaviour {
     /// </summary>
     protected Vector2 direction;
 
+    private Rigidbody2D myRigidBody;
+
     // Use this for initialization
     protected virtual void Start () {
+        myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 	}
 	
@@ -30,17 +33,27 @@ public abstract class Character : MonoBehaviour {
     /// </summary>
 	protected virtual void Update ()
     {
-        Move();
+        // Move(); See in FixedUpdate()
+        HandleLayers();
 	}
+
+    private void FixedUpdate() // Used when manipulate w/ rigid body - 2.2
+    {
+        Move();
+    }
 
     /// <summary>
     /// Moves the player
     /// </summary>
     public void Move()
     {
-        //Makes sure that the player moves
-        transform.Translate(direction * speed * Time.deltaTime);
+        //Makes sure that the player moves # was: transform.Translate(direction * speed * Time.deltaTime);
+        myRigidBody.velocity = direction * speed;
 
+    }
+
+    public void HandleLayers() // Handle animation layers
+    {
         if (direction.x != 0 || direction.y != 0) // If the x-direction or y-direction of the game object (e.g player) is not 0, then go to next line and follow instructions ## If it is not 0, the object is moving in some way!
         {
             //Animate's the Player's movement
@@ -52,7 +65,6 @@ public abstract class Character : MonoBehaviour {
                 animator.SetLayerWeight(1, 0); // Set back to the idle layer
             }
         }
-
 
     }
 

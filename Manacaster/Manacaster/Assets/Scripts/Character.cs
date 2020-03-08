@@ -13,7 +13,7 @@ public abstract class Character : MonoBehaviour {
     [SerializeField]
     private float speed;
 
-    private Animator animator;
+    private Animator myAnimator;
 
     /// <summary>
     /// The Player's direction
@@ -22,10 +22,18 @@ public abstract class Character : MonoBehaviour {
 
     private Rigidbody2D myRigidBody;
 
+    public bool IsMoving // If player is moving or not
+    {
+        get 
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
+
     // Use this for initialization
     protected virtual void Start () {
         myRigidBody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        myAnimator = GetComponent<Animator>();
 	}
 	
 	/// <summary>
@@ -48,38 +56,40 @@ public abstract class Character : MonoBehaviour {
     public void Move()
     {
         //Makes sure that the player moves # was: transform.Translate(direction * speed * Time.deltaTime);
-        myRigidBody.velocity = direction * speed;
+        myRigidBody.velocity = direction.normalized * speed;
 
+        //Press 2 keys, (direction) x=2,y=2 // Normalize = 1, 1
     }
 
     public void HandleLayers() // Handle animation layers
     {
-        if (direction.x != 0 || direction.y != 0) // If the x-direction or y-direction of the game object (e.g player) is not 0, then go to next line and follow instructions ## If it is not 0, the object is moving in some way!
+        if (IsMoving)  // If the x-direction or y-direction of the game object (e.g player) is not 0, then go to next line and follow instructions ## If it is not 0, the object is moving in some way!
         {
             //Animate's the Player's movement
-            AnimateMovement(direction);
+            //AnimateMovement(direction);
+            ActivateLayer("WalkLayer"); //myAnimator.SetLayerWeight(1,1); // # inscope.me 1.3 ## Sets the second animator layer (walk_layer - index values python) to the active layer when the key input to walk is found
+        
+            //Sets the animation parameter so that he faces the correct direction
+            myAnimator.SetFloat("x", direction.x);
+            myAnimator.SetFloat("y", direction.y);
         }
         else // if the object is NOT moving ## object/game-object
         {
             {
-                animator.SetLayerWeight(1, 0); // Set back to the idle layer
+                //myAnimator.SetLayerWeight(1, 0); // Set back to the idle layer
+                ActivateLayer("IdleLayer:");
             }
         }
 
     }
 
-    /// <summary>
-    /// Makes the player animate in the correct direction
-    /// </summary>
-    /// <param name="direction"></param>
-    public void AnimateMovement(Vector2 direction) // whenever player is moving: 
+    public void ActivateLayer(string layerName) //## https://acord.software/stellarios/inscoperpg2dot1 2.2 inscope.me
     {
-	// animator.SetLayerWeight(1, 1)   //# The layer for walking is the second layer - index values - so is number 1 // This sets the layer weight of the animator layers for the player game object // The layer that is set to "1/?0?" is the active one // https://www.youtube.com/watch?v=aOqQuD_1ylA&list=PLX-uZVK_0K_6JEecbu3Y-nVnANJznCzix&index=5 @ 7.42
-	    
-        animator.SetLayerWeight(1,1); // # inscope.me 1.3 ## Sets the second animator layer (walk_layer - index values python) to the active layer when the key input to walk is found
-        
-        //Sets the animation parameter so that he faces the correct direction
-        animator.SetFloat("x", direction.x);
-        animator.SetFloat("y", direction.y);
+        for (int i = 0; i < myAnimator.layerCount; i++)
+        {
+            myAnimator.SetLayerWeight(i, 0);
+        }
+
+        myAnimator.SetLayerWeight(myAnimator.GetLayerIndex(layerName),1);
     }
 }

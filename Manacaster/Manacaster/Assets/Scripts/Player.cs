@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // Autofill for commands, works well in Visual Studio
 
 /// <summary>
 /// This is the player script, it contains functionality that is specific to the Player
 /// </summary>
 public class Player : Character
 {
-    [SerializeField]
+    [SerializeField] // Makes it private but able to be accessed in the inspector -##- https://forum.unity.com/threads/when-to-use-serializefield-and-why.184687/ 
     private Stat health;
 
     [SerializeField]
@@ -17,9 +18,9 @@ public class Player : Character
     //private float healthValue;
 
    // [SerializeField]
-    private float initHealth = 100;
+    private float initHealth = 100; // The initial health of the player is set to 100
 
-    private float initMana = 50;
+    private float initMana = 50; // The initial mana of the player is set to 50
 
     protected override void Start()
     {

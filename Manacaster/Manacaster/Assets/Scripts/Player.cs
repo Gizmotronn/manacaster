@@ -78,4 +78,23 @@ public class Player : Character
             direction += Vector2.right;
         }
     }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.name) {
+            case "Coin":
+                Score.scoreAmount += 1;
+                Destroy(collision.gameObject); // could also do animations here :)
+                break;
+            case "Coin - Copy":
+                Score.scoreAmount += 2;
+                Destroy(collision.gameObject); 
+                break;
+            case "Coin - Copy (2)":
+                Score.scoreAmount += 3;
+                Destroy(collision.gameObject);
+                break;
+                        
+        }
+    }
 }

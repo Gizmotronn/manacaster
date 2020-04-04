@@ -1,4 +1,7 @@
 # IrisDroidology/Manacaster
+# Star Sailors: Ansible
+(By <AC0/RD>
+
 
 Made by Liam Arbuckle, Manacaster is a Role Playing Game that pits you, a mad scientist, against a series of seemingly never-ending enemies in your quest to find the secret of hyperspace travel. It is loosely tied into my novel [`Star Sailors`](http://github.com/acord-robotics/stellarios/tree/starsailors), being featured in the novel. It is currently undergoing development.
 
